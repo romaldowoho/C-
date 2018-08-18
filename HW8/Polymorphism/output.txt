@@ -1,0 +1,116 @@
+employee constructor
+jag vasudevamurthy 678-90 
+employee constructor
+bob ericission 178-90 
+employee copy constructor
+jag vasudevamurthy 678-90 
+employee = operator
+jag vasudevamurthy 678-90 
+jag vasudevamurthy 678-90 
+employee destructor
+employee destructor
+employee destructor
+employee constructor
+salariedemployee constructor
+jag vasudevamurthy 678-90 Xilinx 56000 
+employee constructor
+salariedemployee constructor
+bob ericission 178-90 ATT 3.456e+06 
+employee copy constructor
+salariedemployee copy constructor
+jag vasudevamurthy 678-90 Xilinx 56000 
+salariedemployee = operator
+employee = operator
+jag vasudevamurthy 678-90 Xilinx 56000 
+jag vasudevamurthy 678-90 Xilinx 56000 
+salariedemployee destructor
+employee destructor
+salariedemployee destructor
+employee destructor
+salariedemployee destructor
+employee destructor
+employee constructor
+commissionemployee constructor
+jag vasudevamurthy 678-90 BELL 560 
+employee constructor
+commissionemployee constructor
+bob ericission 178-90 UCSC 345 
+employee copy constructor
+commissionemployee copy constructor
+jag vasudevamurthy 678-90 BELL 560 
+commissionemployee = operator
+employee = operator
+jag vasudevamurthy 678-90 BELL 560 
+jag vasudevamurthy 678-90 BELL 560 
+commissionemployee destructor
+employee destructor
+commissionemployee destructor
+employee destructor
+commissionemployee destructor
+employee destructor
+employee constructor
+commissionemployee constructor
+basepluscommissionemployee constructor
+jag vasudevamurthy 678-90 BELL 560 abc 89 
+employee constructor
+commissionemployee constructor
+basepluscommissionemployee constructor
+bob ericission 178-90 UCSC 345 xyz 90 
+employee copy constructor
+commissionemployee copy constructor
+basepluscommissionemployee copy constructor
+jag vasudevamurthy 678-90 BELL 560 abc 89 
+basepluscommissionemployee = operator
+commissionemployee = operator
+employee = operator
+jag vasudevamurthy 678-90 BELL 560 abc 89 
+jag vasudevamurthy 678-90 BELL 560 abc 89 
+basepluscommissionemployee destructor
+commissionemployee destructor
+employee destructor
+basepluscommissionemployee destructor
+commissionemployee destructor
+employee destructor
+basepluscommissionemployee destructor
+commissionemployee destructor
+employee destructor
+employee constructor
+employee constructor
+employee constructor
+salariedemployee constructor
+employee constructor
+salariedemployee constructor
+employee constructor
+commissionemployee constructor
+employee constructor
+commissionemployee constructor
+employee constructor
+commissionemployee constructor
+basepluscommissionemployee constructor
+employee constructor
+commissionemployee constructor
+basepluscommissionemployee constructor
+0: jag vasudevamurthy 678-90 
+1: bob ericission 178-90 
+2: alex wong 678-89 Men 24 
+3: bob john 478-90 XYX 345 
+4: hale tom 589-78 xil 560000 
+5: jon snith 478-90 UCB 9 
+6: amy vmay 878-90 synp 160 nvida 809 
+7: fake guy 878-60 mu 345 spy 190 
+employee destructor
+employee destructor
+salariedemployee destructor
+employee destructor
+salariedemployee destructor
+employee destructor
+commissionemployee destructor
+employee destructor
+commissionemployee destructor
+employee destructor
+basepluscommissionemployee destructor
+commissionemployee destructor
+employee destructor
+basepluscommissionemployee destructor
+commissionemployee destructor
+employee destructor
