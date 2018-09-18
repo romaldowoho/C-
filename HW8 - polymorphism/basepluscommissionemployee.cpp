@@ -5,8 +5,7 @@ basepluscommissionemployee::basepluscommissionemployee(char* fn, char* ln, char*
 	if(_show) {
 		cout << "basepluscommissionemployee constructor" << endl;
 	}
-	_w = base_giver;
-	_s = base;
+	_alloc(base_giver, base);
 }
 
 basepluscommissionemployee::~basepluscommissionemployee() {
@@ -19,8 +18,7 @@ basepluscommissionemployee::basepluscommissionemployee(const basepluscommissione
 	if(_show) {
 		cout << "basepluscommissionemployee copy constructor" << endl;
 	}
-	_w = copy._w;
-	_s = copy._s;
+	_copy(copy);
 }
 
 basepluscommissionemployee &basepluscommissionemployee::operator=(const basepluscommissionemployee &rhs) {
@@ -29,10 +27,24 @@ basepluscommissionemployee &basepluscommissionemployee::operator=(const baseplus
 	}
 	if(this != &rhs) {
 		commissionemployee::operator=(rhs);
-		_w = rhs._w;
-		_s = rhs._s;
+		_free();
+		_copy(rhs);
 	}
 	return *this;
+}
+
+void basepluscommissionemployee::_alloc(char *who, double salary) {
+	_w = new char[strlen(who) + 1];
+	strcpy(_w,who);
+	_s = salary;
+}
+void basepluscommissionemployee::_copy(const basepluscommissionemployee &copy) {
+	_w = new char[strlen(copy._w) + 1];
+	strcpy(_w,copy._w);
+	_s = copy._s; 
+}
+void basepluscommissionemployee::_free() {
+	delete [] _w;
 }
 
 void basepluscommissionemployee::print(ostream &o) const {

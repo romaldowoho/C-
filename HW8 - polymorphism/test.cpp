@@ -32,6 +32,36 @@ void testEmployee() {
   cout << e2 << endl;
 }
 
+void testEmployee1() {
+  const int N = 5 ;
+  employee* e[N] ;
+  for (int i = 0; i < 5; ++i) {
+    char fname[10] ;
+    char lname[10] ;
+    char ssn[10] ;
+    char a[2] ;
+    a[0] = i + '0' ;
+    a[1] = '\0' ;
+    strcpy(fname,"jag") ;
+    strcat(fname,a) ;
+    strcpy(lname,"Vas") ;
+    strcat(lname,a) ;
+    strcpy(ssn,"46-78-") ;
+    strcat(ssn,a) ;
+    e[i] = new employee(fname,lname,ssn);
+    const employee& ei = *(e[i]);
+    cout << ei << endl;
+  }
+  for (int i = 0; i < N; ++i) {
+    cout << *(e[i]) << endl ;
+  }
+  *(e[0]) = *(e[1]) = *(e[2]) ;
+  for (int i = 0; i < N; ++i) {
+    cout << *(e[i]) << endl ;
+    delete e[i] ;
+  }
+}
+
 /*----------------------------------------------------------------
 testSalariedemployee
 -----------------------------------------------------------------*/
@@ -131,6 +161,7 @@ int main() {
 #endif
   employee::setShow(true);
   testEmployee();
+  testEmployee1();
   testSalariedemployee();
   testCommissionemployee();
   testBasepluscommissionemployee();

@@ -11,6 +11,33 @@ employee destructor
 employee destructor
 employee destructor
 employee constructor
+jag0 Vas0 46-78-0 
+employee constructor
+jag1 Vas1 46-78-1 
+employee constructor
+jag2 Vas2 46-78-2 
+employee constructor
+jag3 Vas3 46-78-3 
+employee constructor
+jag4 Vas4 46-78-4 
+jag0 Vas0 46-78-0 
+jag1 Vas1 46-78-1 
+jag2 Vas2 46-78-2 
+jag3 Vas3 46-78-3 
+jag4 Vas4 46-78-4 
+employee = operator
+employee = operator
+jag2 Vas2 46-78-2 
+employee destructor
+jag2 Vas2 46-78-2 
+employee destructor
+jag2 Vas2 46-78-2 
+employee destructor
+jag3 Vas3 46-78-3 
+employee destructor
+jag4 Vas4 46-78-4 
+employee destructor
+employee constructor
 salariedemployee constructor
 jag vasudevamurthy 678-90 Xilinx 56000 
 employee constructor

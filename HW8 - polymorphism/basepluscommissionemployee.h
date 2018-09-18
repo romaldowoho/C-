@@ -21,6 +21,11 @@ public:
 	friend ostream &operator<<(ostream &o, const basepluscommissionemployee &e);
 
 	virtual void print(ostream &o) const;
+
+private:
+	void _alloc(char *who, double salary);
+	void _copy(const basepluscommissionemployee &copy);
+	void _free();
 };
 
 

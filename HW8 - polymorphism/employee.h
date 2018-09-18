@@ -26,6 +26,11 @@ public:
 	}
 
 	virtual void print(ostream &o) const;
+
+private:
+	void _alloc(char *firstName, char *lastName, char *ssn);
+	void _copy(const employee &copy);
+	void _free();
 };
 
 

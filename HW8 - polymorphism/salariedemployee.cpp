@@ -5,8 +5,7 @@ salariedemployee::salariedemployee(char* fn, char* ln, char* ssn, char* who, dou
 	if(_show) {
 		cout << "salariedemployee constructor" << endl;
 	}
-	_w = who;
-	_s = salary;
+	_alloc(who,salary);
 }
 
 salariedemployee::~salariedemployee() {
@@ -19,8 +18,7 @@ salariedemployee::salariedemployee(const salariedemployee &copy) : employee(copy
 	if(_show) {
 		cout << "salariedemployee copy constructor" << endl;
 	}
-	_w = copy._w;
-	_s = copy._s;
+	_copy(copy);
 }
 
 salariedemployee &salariedemployee::operator=(const salariedemployee &rhs) {
@@ -29,10 +27,26 @@ salariedemployee &salariedemployee::operator=(const salariedemployee &rhs) {
 	}
 	if(&rhs != this) {
 		employee::operator=(rhs);
-		_w = rhs._w;
-		_s = rhs._s;
+		_free();
+		_copy(rhs);
 	}
 	return *this;
+}
+
+void salariedemployee::_alloc(char *who, double salary) {
+	_w = new char[strlen(who) + 1];
+	strcpy(_w,who);
+	_s = salary;
+}
+
+void salariedemployee::_copy(const salariedemployee &copy) {
+	_w = new char[strlen(copy._w) + 1];
+	strcpy(_w,copy._w);
+	_s = copy._s; 
+}
+
+void salariedemployee::_free() {
+	delete [] _w;
 }
 
 void salariedemployee::print(ostream &o) const {
